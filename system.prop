@@ -1,0 +1,80 @@
+#
+# system.prop for shooter
+#
+#
+dev.pm.dyn_samplingrate=1
+lpa.use-stagefright=true
+lpa.decode=true
+
+#cm qcom build lub
+com.qc.hardware=true
+com.qc.hdmi_out=true
+ro.hdmi.enable=true
+
+# board has 3D panel
+persist.user.panel3D=1
+
+rild.libpath=/system/lib/libhtc_ril.so
+# htc v4 ril
+ro.telephony.ril.v3=signalstrength
+ro.ril.enable.garbage.filter=0
+ro.telephony.default_network = 4
+gsm.sim.operator.alpha = Virgin Mobile
+gsm.sim.operator.numeric = 310120
+gsm.sim.operator.iso-country = us
+gsm.operator.alpha = Virgin Mobile
+gsm.operator.numeric = 310120
+gsm.operator.iso-country = us
+ro.cdma.home.operator.numeric=310120
+ro.cdma.home.operator.alpha=Virgin Mobile
+
+#
+# system props for the data modules
+#
+ro.use_data_netmgrd=true
+persist.data_netmgrd_nint=8
+persist.data_netmgrd_mtu=1472
+#
+
+#Modify MTU from 1500 to 1472 on 3G network
+ro.ril.set.mtu1472 = 1
+
+net.tcp.buffersize.wimax = 4096,221184,524288,4096,16384,110208
+
+wifi.interface=wlan0
+wifi.supplicant_scan_interval=30
+
+# density in DPI of the LCD of this board. This is used to scale the UI
+# appropriately. If this property is not defined, the default value is 160 dpi.
+ro.sf.lcd_density=240
+
+# For auto backlight default value
+settings.display.autobacklight=1
+
+# For the default value of agps
+ro.ril.def.agps.mode=2
+
+# The OpenGL ES API level that is natively supported by this device.
+# This is a 16.16 fixed point number
+ro.opengles.version=131072
+
+mobiledata.interfaces=rmnet0,wlan0,gprs,ppp0,wimax0
+
+# For emmc phone storage
+ro.phone_storage = 0
+
+# Make rmt_storage start at init
+ro.emmc = 1
+
+# UMS
+persist.sys.usb.config=mass_storage,adb
+
+# System property for cabl
+ro.qualcomm.cabl=1
+
+# Engineer ID
+ro.engineerid = 3
+
+# Sleep
+ro.ril.disable.power.collapse=0
+pm.sleep_mode=1
