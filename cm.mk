@@ -12,7 +12,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_shooter BUILD_FINGERPRINT="virg
 
 # Device naming
 PRODUCT_DEVICE := shooter
-PRODUCT_NAME := cm_shooter
+PRODUCT_NAME := cm_shootervm
 PRODUCT_BRAND := virgin_mobile
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_MODEL := Evo V 4G
