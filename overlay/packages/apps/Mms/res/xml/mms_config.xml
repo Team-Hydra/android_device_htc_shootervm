@@ -42,4 +42,5 @@
     <bool name="enableSplitSMS">true</bool>
     <int name="smsToMmsTextThreshold">8</int>
     <int name="maxMessageTextSize">-1</int>
+    <bool name="enableSprintVVM">true</bool>
 </mms_config>
