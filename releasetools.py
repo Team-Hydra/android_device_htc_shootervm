@@ -24,5 +24,5 @@ import shutil
 
 def FullOTA_Assertions(info):
   info.script.AppendExtra(
-        ('assert(getprop("ro.bootloader") == "1.04.2000" || getprop("ro.bootloader") == "1.50.5050" || getprop("ro.bootloader") == "1.40.1100" || getprop("ro.bootloader") == "1.30.0000" || getprop("ro.bootloader") == "1.40.0000" || getprop("ro.bootloader") == "1.50.0000");'))
+        ('assert(getprop("ro.bootloader") == "1.04.2000" || getprop("ro.bootloader") == "1.50.5050" || getprop("ro.bootloader") == "1.40.1100" || getprop("ro.bootloader") == "1.30.0000" || getprop("ro.bootloader") == "1.40.0000" || getprop("ro.bootloader") == "1.50.0000" || getprop("ro.bootloader") == "1.40.1000");'))
 
