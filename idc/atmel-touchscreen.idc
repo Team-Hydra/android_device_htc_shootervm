@@ -1,4 +1,4 @@
-# Copyright (C) 2011 The Android Open Source Project
+# Copyright (C) 2010 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,30 +13,43 @@
 # limitations under the License.
 
 #
-# Input Device Calibration File for the Tuna touch screen.
+# Input Device Configuration File for the bi041p touch screen.
+#
+# These calibration values are derived from empirical measurements
+# and may not be appropriate for use with other touch screens.
+# Refer to the input device calibration documentation for more details.
 #
 
 # Basic Parameters
 touch.deviceType = touchScreen
 touch.orientationAware = 1
 
-# Size
-touch.toolSize.calibration = linear
-touch.toolSize.linearScale = 10
-touch.toolSize.linearBias = 160
-touch.toolSize.isSummed = 1
+# Touch Size
+touch.touchSize.calibration = pressure
 
-touch.size.calibration = normalized
+# Tool Size
+# Driver reports tool size as an area measurement.
+#
+# Based on empirical measurements, we estimate the size of the tool
+# using size = sqrt(22 * rawToolArea + 0) * 6 + 0.
+touch.toolSize.calibration = area
+touch.toolSize.areaScale = 22
+touch.toolSize.areaBias = 0
+touch.toolSize.linearScale = 3
+touch.toolSize.linearBias = 0
+touch.toolSize.isSummed = 0
 
 # Pressure
 # Driver reports signal strength as pressure.
 #
-# A normal thumb touch typically registers about 200 signal strength
+# A normal index finger touch typically registers about 80 signal strength
 # units although we don't expect these values to be accurate.
 touch.pressure.calibration = amplitude
 touch.pressure.source = default
-touch.pressure.scale = 0.01
+touch.pressure.scale = 0.09
+
+# Size
+touch.size.calibration = geometric
 
 # Orientation
-touch.orientation.calibration = none
-
+touch.orientation.calibration = interpolated
