@@ -1,4 +1,4 @@
-# Copyright (C) 2010 The Android Open Source Project
+# Copyright (C) 2013 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -11,33 +11,30 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
+# Changelog:
+# 2013-01-27 // Calibrated by Maxxy13
 
+# Input device configuration file for a touch screen that supports pressure,
+# size and orientation.  The pressure and size scale factors were obtained
+# by measuring the characteristics of the device itself and deriving
+# useful approximations based on the resolution of the touch sensor and the
+# display.
 #
-# Input Device Configuration File for the bi041p touch screen.
-#
-# These calibration values are derived from empirical measurements
-# and may not be appropriate for use with other touch screens.
-# Refer to the input device calibration documentation for more details.
-#
+# Note that these parameters are specific to a particular device model.
+# Different parameters will need to be used for other devices.
 
 # Basic Parameters
 touch.deviceType = touchScreen
 touch.orientationAware = 1
 
-# Touch Size
-touch.touchSize.calibration = pressure
-
-# Tool Size
-# Driver reports tool size as an area measurement.
-#
-# Based on empirical measurements, we estimate the size of the tool
-# using size = sqrt(22 * rawToolArea + 0) * 6 + 0.
-touch.toolSize.calibration = area
-touch.toolSize.areaScale = 22
-touch.toolSize.areaBias = 0
-touch.toolSize.linearScale = 3
-touch.toolSize.linearBias = 0
-touch.toolSize.isSummed = 0
+# Size
+# Based on empirical measurements, we estimate the size of the contact
+# using size = sqrt(area) * 15 + 0.
+touch.size.calibration = area
+touch.size.scale = 15
+touch.size.bias = 0
+touch.size.isSummed = 0
 
 # Pressure
 # Driver reports signal strength as pressure.
@@ -45,11 +42,7 @@ touch.toolSize.isSummed = 0
 # A normal index finger touch typically registers about 80 signal strength
 # units although we don't expect these values to be accurate.
 touch.pressure.calibration = amplitude
-touch.pressure.source = default
-touch.pressure.scale = 0.09
-
-# Size
-touch.size.calibration = geometric
+touch.pressure.scale = 0.0105
 
 # Orientation
-touch.orientation.calibration = interpolated
+touch.orientation.calibration = none
