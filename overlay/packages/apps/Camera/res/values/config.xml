@@ -18,4 +18,11 @@
 <resources>
     <!-- HTC Camcorder Mode -->
     <bool name="needsHTCCamMode">true</bool>
+
+    <!-- Allows setting video size before recording starts -->
+    <bool name="needsEarlyVideoSize">true</bool>
+
+    <!-- The camera removes the focus modes by default when touch-to-focus
+        exists. Use this option to change that behavior -->
+    <bool name="wantsFocusModes">true</bool>
 </resources>
