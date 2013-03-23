@@ -90,7 +90,7 @@ BOARD_FLASH_BLOCK_SIZE := 262144
 
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 TARGET_RECOVERY_UI_LIB := librecovery_ui_shooter
-TARGET_RECOVERY_INITRC := device/htc/shooter/recovery/init.rc
+TARGET_RECOVERY_INITRC := device/htc/shootervm/recovery/init.rc
 BOARD_SDCARD_DEVICE_PRIMARY := /dev/block/mmcblk1p1
 BOARD_SDCARD_DEVICE_SECONDARY := /dev/block/mmcblk1
 BOARD_SDEXT_DEVICE := /dev/block/mmcblk1p2

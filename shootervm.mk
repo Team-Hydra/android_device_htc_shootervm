@@ -163,8 +163,8 @@ $(call inherit-product, device/htc/shootervm/media_htcaudio.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := full_shooter
-PRODUCT_DEVICE := shooter
+PRODUCT_NAME := full_shootervm
+PRODUCT_DEVICE := shootervm
 PRODUCT_BRAND := virgin_mobile
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_MODEL := Evo V 4G
