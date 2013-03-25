@@ -111,9 +111,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     gps.shooter
 
-# Torch
 PRODUCT_PACKAGES += \
-    Torch
+    Torch \
+    CellBroadcastReceiver
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
