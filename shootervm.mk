@@ -115,6 +115,13 @@ PRODUCT_PACKAGES += \
     Torch \
     CellBroadcastReceiver
 
+# Goo
+PRODUCT_PROPERTY_OVERRIDES += \
+     ro.goo.developerid=dastin1015 \
+     ro.goo.board=shootervm \
+     ro.goo.rom=WILD-FOR-THE-NIGHT \
+     ro.goo.version=$(shell date +%Y%m%d%H%M%S)
+
 # Filesystem management tools
 PRODUCT_PACKAGES += \
     make_ext4fs \
