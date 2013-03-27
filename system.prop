@@ -79,7 +79,8 @@ ro.engineerid = 3
 ro.ril.disable.power.collapse=0
 pm.sleep_mode=1
 
+qemu.hw.mainkeys=1
+
 # goo.im support
 ro.goo.developerid=dastin1015
-ro.goo.board=shootervm
 ro.goo.rom=WILD-FOR-THE-NIGHT
