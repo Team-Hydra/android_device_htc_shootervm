@@ -6,12 +6,10 @@
     <!-- Values for the notification light pulse spinners -->
     <string-array name="notification_pulse_length_entries" translatable="false">
         <item>@string/pulse_length_normal</item>
-        <item>@string/pulse_length_long</item>
         <item>@string/pulse_length_always_on</item>
     </string-array>
 
     <string-array name="notification_pulse_length_values" translatable="false">
-        <item>1000</item>
         <item>2500</item>
         <item>1</item>
     </string-array>
