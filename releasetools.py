@@ -26,8 +26,4 @@ def FullOTA_Assertions(info):
   info.script.AppendExtra('run_program("/sbin/busybox", "mkdir", "/data/wimax/log");')
   info.script.AppendExtra('run_program("/sbin/busybox", "chattr", "+i", "/data/wimax/log");')
   info.script.AppendExtra('unmount("/data");')
-  info.script.AppendExtra('run_program("/sbin/busybox", "mv", "-f", "/system/bin/thermald", "/system/bin/thermald.bak");')
-  info.script.AppendExtra('run_program("/sbin/busybox", "mv", "-f", "/system/bin/mpdecision", "/system/bin/mpdecision.bak");')
-  info.script.AppendExtra('run_program("/sbin/busybox", "sed", "-i", "s#start mpdecision#\#start mpdecision#", "/system/etc/init.qcom.post_boot.sh");')
-  info.script.AppendExtra('run_program("/sbin/busybox", "sed", "-i", "s#start thermald#\#start thermald#", "/system/etc/init.qcom.post_boot.sh");')
   
