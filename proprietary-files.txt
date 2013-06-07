@@ -25,10 +25,8 @@ bin/wimaxDaemon
 bin/charging
 bin/htcbatt
 bin/load-modem.sh
-bin/mpdecision
 bin/netmgrd
 bin/qmuxd
-bin/thermald
 bin/wireless_modem
 xbin/wireless_modem
 lib/libaudioalsa.so
@@ -63,14 +61,12 @@ lib/libmmjpeg.so
 lib/libmmjps.so
 lib/libmmjpeg2.so
 lib/libmm-color-convertor.so
-lib/libmm-omxcore.so
 lib/libmpl.so
 lib/libmllite.so
 lib/libmlplatform.so
 lib/libnetmgr.so
 lib/liboemcamera.so
 lib/libOlaEngine.so
-lib/libOpenMAXAL.so
 lib/libOpenVG.so
 lib/libposteffect.so
 lib/libqc-opt.so
@@ -78,9 +74,8 @@ lib/libqmi.so
 lib/libqdp.so
 lib/libqmiservices.so
 lib/egl/libq3dtools_adreno200.so
-lib/libv8.so
-lib/hw/camera.default.so
 lib/hw/sensors.shooter.so
+lib/hw/vendor-camera.default.so
 bin/logcat2
 bin/rmt_storage
 bin/sound8x60
