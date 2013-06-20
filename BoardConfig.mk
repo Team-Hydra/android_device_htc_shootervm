@@ -30,6 +30,8 @@
 # inherit from the proprietary version
 -include vendor/htc/shootervm/BoardConfigVendor.mk
 
+TARGET_SPECIFIC_HEADER_PATH := device/htc/shootervm/include
+
 TARGET_BOOTLOADER_BOARD_NAME := shooter
 
 TARGET_OTA_ASSERT_DEVICE := shooter
