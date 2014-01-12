@@ -22,12 +22,12 @@ ro.telephony.ril.v3=signalstrength,skipdatareg,skipbrokendatacall
 ro.ril.enable.garbage.filter=0
 ro.telephony.default_network=4
 gsm.sim.operator.alpha=Virgin Mobile
-gsm.sim.operator.numeric=310120
+gsm.sim.operator.numeric=311490
 gsm.sim.operator.iso-country=us
 gsm.operator.alpha=Virgin Mobile
-gsm.operator.numeric=310120
+gsm.operator.numeric=311490
 gsm.operator.iso-country=us
-ro.cdma.home.operator.numeric=310120
+ro.cdma.home.operator.numeric=311490
 ro.cdma.home.operator.alpha=Virgin Mobile
 
 #

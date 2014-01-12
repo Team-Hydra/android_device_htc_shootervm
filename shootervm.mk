@@ -51,7 +51,6 @@ PRODUCT_COPY_FILES += \
 
 # misc
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/apns-conf.xml:system/etc/apns-conf.xml \
     $(COMMON_PATH)/configs/voicemail-conf.xml:system/etc/voicemail-conf.xml \
     $(COMMON_PATH)/firmware/default_bak.acdb:system/etc/firmware/default_bak.acdb
 
